@@ -7,7 +7,7 @@ const todoControl = document.querySelector('.todo-control'),
 
 let todoData = [];
 
-todoData = JSON.parse(localStorage.getItem('todo'));
+todoData = JSON.parse(localStorage.getItem('todo')) || [];
 
 const render = function() {
     todoList.textContent = '';
